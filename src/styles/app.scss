@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import './variable.scss';
+
+html {
+    margin: 0;
+}
+body {
+    font-family: "Poppins", "Helvetica Neue";
+    font-weight: $font-extralight;
+    background-color: $bg-color;
+    height: 100vh;
+    max-width: 1440px;
+}

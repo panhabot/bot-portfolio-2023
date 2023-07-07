@@ -1,0 +1,25 @@
+@import './variable.scss';
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.logo-wrapper {
+    display: flex;
+}
+.logo{
+    font-size: 54px;
+    align-self: flex-end;
+}
+.copyright {
+    align-self: flex-end;
+    font-size: 12px;
+    padding: 3px 11px;
+}
+.nav-btn {
+    align-items: flex-end;
+    align-self: flex-end;
+}
