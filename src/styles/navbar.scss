@@ -1,25 +1,26 @@
-@import './variable.scss';
+@import "./variable.scss";
 
-
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100px;
+.nav-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 100px;
 }
 .logo-wrapper {
-    display: flex;
+  display: flex;
+  position: absolute;
 }
-.logo{
-    font-size: 54px;
-    align-self: flex-end;
+.logo {
+  font-size: 54px;
+  align-self: flex-end;
 }
 .copyright {
-    align-self: flex-end;
-    font-size: 12px;
-    padding: 3px 11px;
+  align-self: flex-end;
+  font-size: 12px;
+  padding: 3px 11px;
 }
 .nav-btn {
-    align-items: flex-end;
-    align-self: flex-end;
+  position: absolute;
+  right: 50px;
 }

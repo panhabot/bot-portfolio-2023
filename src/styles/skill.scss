@@ -1,0 +1,49 @@
+@import "./variable.scss";
+
+.skill-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .skill-content-wrapper {
+    position: absolute;
+    top: 5vw;
+    .skill-title {
+      text-align: center;
+      font-size: 54px;
+      color: $primary-color;
+    }
+    .skill-object {
+      font-size: 18px;
+      margin-top: 100px;
+    }
+  }
+  .decore-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .decore-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .backward-btn {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    cursor: pointer;
+  }
+  .forward-btn {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    cursor: pointer;
+  }
+  .skill-tree {
+    position: absolute;
+    bottom: 0;
+    width: 15vw;
+  }
+}

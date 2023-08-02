@@ -1,0 +1,72 @@
+@import "./variable.scss";
+
+.about-container {
+  background-color: $bg-color;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  .about-decore {
+    position: absolute;
+    top: 0;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-title {
+    font-size: 54px;
+    color: $primary-color;
+  }
+  .about-description {
+    font-size: 22px;
+    border: none;
+    padding: 24px;
+    position: relative;
+
+    .border-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 1px solid $slight-color;
+      border-left: 1px solid $slight-color;
+      width: 70px;
+      height: 70px;
+    }
+
+    .border-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 1px solid $slight-color;
+      border-right: 1px solid $slight-color;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .learn-btn {
+    width: 250px;
+    height: 60px;
+    background-color: $bg-color;
+    border: 1px solid $primary-color;
+    box-shadow: $shadow;
+    border-radius: 150px;
+    margin-top: 55px;
+    font-size: 16px;
+    font-weight: $font-light;
+    font-family: "Poppins", "Helvetica Neue";
+    cursor: pointer;
+  }
+
+  .backward-btn {
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .forward-btn {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+}

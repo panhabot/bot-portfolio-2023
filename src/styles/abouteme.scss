@@ -1,0 +1,173 @@
+@import "./variable.scss";
+
+.about-me-container {
+  margin: 8% 15%;
+  padding-bottom: 50px;
+  position: relative;
+  .close-btn {
+    position: absolute;
+    top: -3%;
+    right: -10%;
+    cursor: pointer;
+  }
+  .description-container {
+    display: flex;
+    justify-content: space-between;
+
+    .intro {
+      font-size: 36px;
+      color: $primary-color;
+      line-height: 54px;
+    }
+
+    .nationality-wrapper {
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      .flag {
+        margin: 0 15px;
+      }
+    }
+    .intro-desc {
+      font-weight: $font-extralight;
+      font-size: 22px;
+    }
+    .my-image {
+      width: 100%;
+    }
+  }
+  .edu-background-wrapper {
+    margin-top: 50px;
+    .edu-header {
+      text-align: center;
+      font-size: 30px;
+      span {
+        background: linear-gradient(transparent 50%, $secondary-color 0%);
+      }
+    }
+    .edu-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .year-wrapper {
+        flex: 50%;
+        display: flex;
+        align-items: center;
+
+        margin-top: 47px;
+        .year {
+          background: $secondary-color;
+
+          width: 100px;
+          height: 100px;
+          border-radius: 200px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            right: 10px;
+            bottom: 0px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 200px;
+          }
+        }
+        .info {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .work-wrapper {
+    margin-top: 50px;
+    .work-header {
+      text-align: center;
+      font-size: 30px;
+      span {
+        background: linear-gradient(transparent 50%, $secondary-color 0%);
+      }
+    }
+    .work-desc {
+      margin-top: 50px;
+      border-left: 1px solid black;
+      padding: 38px 0;
+      .work-info {
+        margin-top: 23px;
+        margin-left: 23px;
+        position: relative;
+        .dot {
+          position: absolute;
+          left: -33px;
+          top: 10%;
+          width: 20px;
+          height: 20px;
+          border-radius: 100px;
+          background-color: $slight-color;
+        }
+        .work-year {
+          font-size: 30px;
+          opacity: 0.2;
+        }
+        .workplace {
+          font-size: 30px;
+        }
+        .location-title {
+          font-size: 15px;
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .program-skill-wrapper {
+    margin-top: 50px;
+    .program-header {
+      text-align: center;
+      font-size: 30px;
+      span {
+        background: linear-gradient(transparent 50%, $secondary-color 0%);
+      }
+    }
+    .program-desc {
+      text-align: center;
+      margin-top: 46px;
+      font-size: 25px;
+    }
+  }
+  .skill-wrapper {
+    margin-top: 30px;
+    .skill-header {
+      text-align: center;
+      font-size: 30px;
+      span {
+        background: linear-gradient(transparent 50%, $secondary-color 0%);
+      }
+    }
+    .skill-desc {
+      text-align: center;
+      margin-top: 46px;
+      font-size: 25px;
+    }
+  }
+  .find-wrapper {
+    margin-top: 30px;
+    .find-header {
+      text-align: center;
+      font-size: 30px;
+      span {
+        background: linear-gradient(transparent 50%, $secondary-color 0%);
+      }
+    }
+    .find-desc {
+      text-align: center;
+    }
+  }
+}
