@@ -17,6 +17,12 @@
     .skill-object {
       font-size: 18px;
       margin-top: 100px;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        margin-top: 100px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
     }
   }
   .decore-left {
@@ -45,5 +51,8 @@
     position: absolute;
     bottom: 0;
     width: 15vw;
+    @media only screen and (max-width: 768px) {
+      width: 50vw;
+    }
   }
 }

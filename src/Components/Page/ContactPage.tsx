@@ -48,7 +48,7 @@ export const ContactPage = () => {
         </div>
       </div>
 
-      {/* <div className="marquee">
+      <div className="marquee">
         <div className="marquee__inner">
           <p className="marquee__line">
             Innovative Logical Detail-Oriented Problem Solver Adaptable
@@ -57,7 +57,7 @@ export const ContactPage = () => {
             Innovative Logical Detail-Oriented Problem Solver Adaptable
           </p>
         </div>
-      </div> */}
+      </div>
       <TopButton onClick={handleBack} className="top-btn" />
     </div>
   );

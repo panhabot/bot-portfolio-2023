@@ -16,6 +16,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 768px) {
+      margin: 0 30px;
+    }
   }
   .about-title {
     font-size: 54px;
@@ -64,9 +67,35 @@
   .backward-btn {
     margin-left: 50px;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
   .forward-btn {
     margin-right: 50px;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mb-btn-wrapper {
+    display: none;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      margin-top: 20px;
+    }
+    .backward-btn-mb {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+    .forward-btn-mb {
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
   }
 }

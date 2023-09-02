@@ -74,6 +74,10 @@ export const AboutPage = () => {
         >
           Learn More About Me
         </motion.button>
+        <div className="mb-btn-wrapper">
+          <BackwardButton onClick={handleBack} className="backward-btn-mb" />
+          <ForwardButton onClick={handleForward} className="forward-btn-mb" />
+        </div>
       </div>
       <ForwardButton onClick={handleForward} className="forward-btn" />
     </motion.div>
