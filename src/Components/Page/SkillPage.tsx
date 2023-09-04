@@ -11,7 +11,7 @@ import { AnimatedSkillTree } from "../AnimatedSkillTree";
 export const SkillPage = () => {
   const navigate = useNavigate();
   const handleBackward = () => {
-    navigate(-1);
+    navigate("/about_me");
   };
   const handleForward = () => {
     navigate("/contact");

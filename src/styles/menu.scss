@@ -1,0 +1,24 @@
+@import "./variable.scss";
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 64px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 64px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 32px;
+    .close-btn {
+      margin: 32px;
+      width: 45px;
+    }
+  }
+}

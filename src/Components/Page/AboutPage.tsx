@@ -9,7 +9,7 @@ export const AboutPage = () => {
   const navigate = useNavigate();
   const [isVisble, setIsVisble] = useState(false);
   const handleBack = () => {
-    navigate(-1);
+    navigate("/");
   };
   const handleForward = () => {
     navigate("/skill");

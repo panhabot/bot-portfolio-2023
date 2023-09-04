@@ -6,6 +6,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   // @media only screen and (max-width: 768px) {
   //   height: 100%;
   // }
@@ -45,16 +46,46 @@
       display: flex;
       justify-content: space-between;
       font-size: 14px;
+      @media only screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+      .info {
+        cursor: pointer;
+      }
     }
     @media only screen and (max-width: 768px) {
       margin-right: 0;
-
+      width: 280px;
       margin-top: 32px;
     }
   }
   .contact-content {
     @media only screen and (max-width: 768px) {
-      padding: 0 20px;
+      padding: 0;
+    }
+  }
+  .contact-text {
+    font-size: 16px;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  .contact-text-connect {
+    font-size: 64px;
+    @media only screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+  }
+  .in-touch-text {
+    font-size: 26px;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .social {
+    font-size: 14px;
+    @media only screen and (max-width: 768px) {
+      font-size: 8px;
     }
   }
   .marquee {

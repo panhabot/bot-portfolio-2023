@@ -29,7 +29,9 @@
     border: none;
     padding: 24px;
     position: relative;
-
+    @media only screen and (max-width: 768px) {
+      font-size: 18px;
+    }
     .border-left {
       position: absolute;
       top: 0;
@@ -55,6 +57,7 @@
     height: 60px;
     background-color: $bg-color;
     border: 1px solid $primary-color;
+    color: black;
     box-shadow: $shadow;
     border-radius: 150px;
     margin-top: 55px;

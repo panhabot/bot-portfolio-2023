@@ -2,13 +2,18 @@
 
 .about-me-container {
   margin: 8% 15%;
-  padding-bottom: 50px;
+  padding-bottom: 168px;
   position: relative;
   .close-btn {
     position: absolute;
     top: -3%;
     right: -10%;
     cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      top: -20px;
+      right: -18%;
+      width: 35px;
+    }
   }
   .description-container {
     display: flex;
@@ -66,10 +71,18 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
       .year-wrapper {
         flex: 50%;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: 768px) {
+          flex: 1;
+          width: 70vw;
+        }
 
         margin-top: 47px;
         .year {
@@ -85,7 +98,7 @@
           @media only screen and (max-width: 768px) {
             width: 50px;
             height: 50px;
-            font-size: 14px;
+            font-size: 9px;
             border-radius: 70px;
           }
           &::after {
@@ -109,6 +122,9 @@
         }
         .info {
           margin-left: 20px;
+          @media only screen and (max-width: 768px) {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -190,12 +206,27 @@
     .find-header {
       text-align: center;
       font-size: 30px;
+      margin-bottom: 8px;
       span {
         background: linear-gradient(transparent 50%, $secondary-color 0%);
       }
     }
     .find-desc {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        width: 200px;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 4px 0;
+        color: black;
+        border-radius: 100px;
+      }
     }
   }
 }

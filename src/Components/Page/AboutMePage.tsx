@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const AboutMePage = () => {
   const navigate = useNavigate();
   const handleBack = () => {
-    navigate(-1);
+    navigate("/about_me");
   };
   return (
     <div className="about-me-container">
@@ -136,10 +136,21 @@ export const AboutMePage = () => {
           <span>Find Me</span>
         </div>
         <div className="find-desc">
-          <div>@github</div>
-          <div>@instagram</div>
-          <div>@linkedin</div>
-          <div>@facebook</div>
+          <a href="https://github.com/panhabot" target="_blank">
+            @github
+          </a>
+          <a href="https://www.instagram.com/iambot_/" target="_blank">
+            @instagram
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kong-panhabot-743832190/"
+            target="_blank"
+          >
+            @linkedin
+          </a>
+          <a href="https://www.facebook.com/panha.bot.944" target="_blank">
+            @facebook
+          </a>
         </div>
       </div>
     </div>
