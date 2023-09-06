@@ -127,8 +127,8 @@ export const AboutMePage = () => {
           <span>Skills</span>
         </div>
         <div className="skill-desc">
-          typescript / react / vue / javascript / html <br />/ python / php /
-          flutter / dart / react native
+          frontend / backend / project management / agile method <br />/ mobile
+          app developmnent / design / collaboration / project sprint
         </div>
       </div>
       <div className="find-wrapper">

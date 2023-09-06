@@ -184,6 +184,10 @@
       text-align: center;
       margin-top: 46px;
       font-size: 25px;
+      @media only screen and (max-width: 768px) {
+        margin-top: 36px;
+        font-size: 16px;
+      }
     }
   }
   .skill-wrapper {
@@ -199,6 +203,11 @@
       text-align: center;
       margin-top: 46px;
       font-size: 25px;
+      @media only screen and (max-width: 768px) {
+        margin-top: 36px;
+
+        font-size: 16px;
+      }
     }
   }
   .find-wrapper {
