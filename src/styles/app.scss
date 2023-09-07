@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-@import './variable.scss';
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+@import "./variable.scss";
 
 body {
-    font-family: "Poppins", "Helvetica Neue";
-    font-weight: $font-extralight;
-    background-color: $bg-color;
-    height: 100vh;
+  font-family: "Poppins", "Helvetica Neue";
+  font-weight: $font-extralight;
+  background-color: $bg-color;
+  height: 100vh;
+}
+
+.checkorientation {
+  @media screen and (orientation: landscape) {
+    display: none;
+  }
 }

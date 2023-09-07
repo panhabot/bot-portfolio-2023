@@ -8,7 +8,8 @@ import { SkillPage } from "./Components/Page/SkillPage";
 import { ContactPage } from "./Components/Page/ContactPage";
 import { AboutMePage } from "./Components/Page/AboutMePage";
 import { MenuPage } from "./Components/Page/MenuPage";
-
+import { LandscapeCheck } from "./Components/Page/LandscapeCheck";
+import { isMobile } from "react-device-detect";
 const App = () => {
   const element = useRoutes([
     {
@@ -41,7 +42,10 @@ const App = () => {
   if (!element) return null;
   return (
     <AnimatePresence mode="wait">
-      {React.cloneElement(element, { key: location.pathname })}
+      <div className={isMobile ? "checkorientation" : ""}>
+        {React.cloneElement(element, { key: location.pathname })}
+      </div>
+      {isMobile && <LandscapeCheck />}
     </AnimatePresence>
   );
 };
