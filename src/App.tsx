@@ -41,12 +41,15 @@ const App = () => {
 
   if (!element) return null;
   return (
-    <AnimatePresence mode="wait">
+    <>
       <div className={isMobile ? "checkorientation" : ""}>
-        {React.cloneElement(element, { key: location.pathname })}
+        <AnimatePresence mode="wait">
+          {React.cloneElement(element, { key: location.pathname })}
+        </AnimatePresence>
       </div>
+
       {isMobile && <LandscapeCheck />}
-    </AnimatePresence>
+    </>
   );
 };
 
