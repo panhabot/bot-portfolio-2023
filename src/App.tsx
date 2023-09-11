@@ -10,6 +10,7 @@ import { AboutMePage } from "./Components/Page/AboutMePage";
 import { MenuPage } from "./Components/Page/MenuPage";
 import { LandscapeCheck } from "./Components/Page/LandscapeCheck";
 import { isMobile } from "react-device-detect";
+import { _404page } from "./Components/Page/_404page";
 const App = () => {
   const element = useRoutes([
     {
@@ -35,6 +36,10 @@ const App = () => {
     {
       path: "/menu",
       element: <MenuPage />,
+    },
+    {
+      path: "*",
+      element: <_404page />,
     },
   ]);
   const location = useLocation();

@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .title {
+    font-size: 36px;
+  }
+  .btn-return {
+    padding: 12px;
+    background-color: transparent;
+    border-width: 1px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
