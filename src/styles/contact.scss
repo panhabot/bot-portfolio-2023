@@ -1,0 +1,136 @@
+@import "./variable.scss";
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  // @media only screen and (max-width: 768px) {
+  //   height: 100%;
+  // }
+  .nav-bar-contact {
+    position: absolute;
+    top: 30px;
+  }
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 15vh;
+    }
+  }
+  .top-btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .contact-info {
+    border: 1px solid black;
+    width: 300px;
+    padding: 21px 15px;
+    margin-right: 80px;
+    .info-wrapper {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      @media only screen and (max-width: 768px) {
+        font-size: 12px;
+      }
+      .info {
+        cursor: pointer;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      margin-right: 0;
+      width: 280px;
+      margin-top: 32px;
+    }
+  }
+  .contact-content {
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+  .contact-text {
+    font-size: 16px;
+    @media only screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  .contact-text-connect {
+    font-size: 64px;
+    @media only screen and (max-width: 768px) {
+      font-size: 48px;
+    }
+  }
+  .in-touch-text {
+    font-size: 26px;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  .social {
+    font-size: 14px;
+    @media only screen and (max-width: 768px) {
+      font-size: 8px;
+    }
+  }
+  .marquee {
+    position: absolute;
+    height: auto;
+    bottom: 20%;
+    overflow: hidden;
+    overflow-x: hidden;
+    font-weight: $font-light;
+    font-size: 78px;
+    text-transform: uppercase;
+    color: $secondary-color;
+    @media only screen and (max-width: 768px) {
+      font-size: 46px;
+      position: relative;
+      bottom: 0;
+    }
+  }
+
+  .marquee__inner {
+    display: flex;
+    overflow: hidden;
+    max-width: 100vw;
+  }
+
+  .marquee__line {
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 15px;
+    // min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
