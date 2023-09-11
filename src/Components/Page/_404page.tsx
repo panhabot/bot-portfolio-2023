@@ -9,7 +9,7 @@ export const _404page = () => {
   };
   return (
     <div className="container">
-      <p className="title"> {"< 404 Page Not Found />"}</p>
+      <p className="title"> {"<404 Page Not Found />"}</p>
       <div onClick={handleReturnHome} className="btn-return">
         Return
       </div>
