@@ -2,7 +2,7 @@
 @import "./animation.scss";
 
 .mainContainer {
-  height: 100vh;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
   .decore-image-main {
@@ -29,9 +29,14 @@
       font-size: 35px;
       color: $primary-color;
       @media only screen and (max-width: 768px) {
-        top: 0;
+        top: -5%;
         left: 0;
+
         padding: 0 20px;
+        .welcome-text {
+          font-size: 26px;
+          margin: 16px 0;
+        }
       }
       .iam {
         color: black;
@@ -45,6 +50,7 @@
         font-size: 22px;
         @media only screen and (max-width: 768px) {
           font-size: 16px;
+          margin: 8px 0;
         }
       }
     }
@@ -59,9 +65,9 @@
         right: auto;
         margin-right: auto;
         margin-left: auto;
-        bottom: 10%;
+        bottom: 20%;
         .main-img {
-          width: 80vw;
+          width: 90vw;
           height: auto;
         }
       }
