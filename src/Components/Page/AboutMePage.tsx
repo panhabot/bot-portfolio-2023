@@ -78,7 +78,7 @@ export const AboutMePage = () => {
         <div className="work-desc">
           <div className="work-info">
             <div className="dot"></div>
-            <div className="work-year">Apr 2023 - Present</div>
+            <div className="work-year">Mar 2023 - Present</div>
             <div className="workplace">Quad</div>
             <div className="location-title">
               Tokyo Japan <br /> Software Developer
